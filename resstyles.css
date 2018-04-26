@@ -1,0 +1,50 @@
+/*
+   CIS130-101
+   Homework: a Place to Visit
+   Tutorial Case
+
+   Author:   James R. Allen
+   Date:     4/10/18
+
+   Filename: resstyles.css
+
+   This file contains the initial settings for index.html
+   designed to display "A place to visit" with
+   resized settings for a screen width of a cell phone (380px or less) .
+
+ here the width of the screen is less than 380px */
+
+.col1, .col2, .col3
+{
+  float: none;
+  width:100%;
+}
+
+@media screen and (min-width:380px)
+{
+  nav.horizontalNavigation a
+  {
+  text-align: left;
+  }
+  .col1, .col2
+  {
+    float:left;
+    width:45%;
+    margin-right: 5%;
+  }
+}
+/* gt 740px */
+@media screen and (min-width:740px)
+{
+  .col1, .col2, .col3
+  {
+    float: left;
+    width: 30%;
+    margin-right: 3%;
+  }
+
+  .col3
+  {
+    float: right;
+  }
+}

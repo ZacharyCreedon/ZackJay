@@ -1,0 +1,106 @@
+@charset "utf-8";
+
+/*
+   CIS130-101
+   Homework: a Place to Visit
+   Tutorial Case
+
+   Author:   James R. Allen
+   Date:     4/10/18
+
+   Filename: styles.css
+
+   This file contains the initial settings for index.html
+   designed to display "A place to visit" with
+   initial settings for a screen width of a cell phone (380px or less) .
+
+*/
+html
+{
+  overflow: auto;
+  position: relative;
+  height: 900px;
+  width: 100%;
+}
+/* ===========
+   Base Styles
+   ===========
+    */
+
+body
+{
+  font-family: Helvetica, Arial, sans-serif;
+  padding: 0;
+  margin: 0;
+  background-color: grey;
+  text-align: center;
+}
+
+.vertical-menu a
+{
+  background-color: beige;
+  font-family: arial, normal;
+  display: block;
+  width: 100px;
+  padding: 5px;
+  font-size: 1em;
+  text-decoration: none;
+}
+.vertical-menu a:active
+{
+  background-color: lightgrey;
+  color: black;
+}
+.vertical-menu a:hover
+{
+  background-color: aquamarine;
+  color: blue
+}
+
+
+h1
+{
+	font-family: lobster, cursive;
+    color: white;
+    text-align: center;
+    text-shadow: 3px 3px black;
+}
+.container
+{
+  width:90%;
+  margin:auto;
+  max-width: 1200px;
+  background-color: #fff;
+}
+header
+{
+  background-color: #a3a1a1;
+	padding: 40px 25px;
+}
+.cols
+{
+  padding: 50px 10px 5px 10px;
+  line-height: 1.5
+}
+img
+{
+  width: 100%;
+  height: auto;
+  margin: 0 0 10px 0;
+  background-color: lightgray;
+  box-sizing: border-box;
+}
+.col1, .col2, .col3
+{
+  float:none;
+  width:90%;
+  margin-right:5%;
+}
+.col3
+{
+  margin-right: 0%;
+}
+.clearfix:after
+{
+  content: "";display: table; clear: both;
+}
