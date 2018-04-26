@@ -1,0 +1,41 @@
+/*
+Name:       Zachary Creedon
+Date:       04/02/2018
+Assignment: Registration
+*/
+body {
+  background-image:url(makeAppt.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-color:#508ec7;
+}
+.container {
+  margin:auto;
+  width:80%;
+  background-color: #eeeeee;
+  padding:25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+h2 {text-align: center}
+
+label {
+  display: inline;
+  padding-bottom: 5px;
+  position: relative;
+}
+/*input {
+  position: absolute;
+  left: 16%;
+  width: 75%;
+}*/
+.submit {
+  width: initial;
+  position: initial;
+}
+.time {
+  width: initial;
+  position: relative;
+  display: inline;
+}
