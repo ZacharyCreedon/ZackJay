@@ -5,14 +5,14 @@
    Homework: a Place to Visit
    Tutorial Case
 
-   Author:   James R. Allen
-   Date:     4/10/18
+   Author:   James R. Allen and Zachary Creedon
+   Date:     5/1/18
 
    Filename: styles.css
 
    This file contains the initial settings for index.html
    designed to display "A place to visit" with
-   initial settings for a screen width of a cell phone (380px or less) .
+   the incorporation of bootstrap.
 
 */
 html
@@ -29,78 +29,70 @@ html
 
 body
 {
-  font-family: Helvetica, Arial, sans-serif;
-  padding: 0;
+  font-family: lobster, Helvetica, Arial, sans-serif, cursive;
+  padding-top: 10px;
   margin: 0;
-  background-color: grey;
+  background-color: #1E90FF;
   text-align: center;
 }
 
-.vertical-menu a
+.navbar-nav
 {
-  background-color: beige;
-  font-family: arial, normal;
+  float: none;
+  margin: 0 auto;
+  font-size: 20px;
   display: block;
-  width: 100px;
-  padding: 5px;
-  font-size: 1em;
+  text-align: center;
   text-decoration: none;
 }
-.vertical-menu a:active
+.navbar-nav > li
 {
-  background-color: lightgrey;
-  color: black;
+  display: inline-block;
+  text-shadow: 2px 1px white;
+  float: none;
+  text-decoration: none;
 }
-.vertical-menu a:hover
+a:link
 {
-  background-color: aquamarine;
-  color: blue
+  text-decoration:none;
 }
-
+a:visited
+{
+  text-decoration: none;
+}
+a:hover
+{
+  text-decoration: underline;
+}
+a:active
+{
+  text-decoration: none;
+}
 
 h1
 {
 	font-family: lobster, cursive;
+    background-color: navy;
     color: white;
     text-align: center;
-    text-shadow: 3px 3px black;
+    text-shadow: 5px 3px FireBrick;
+    font-size: 60px;
 }
-.container
+
+h3
 {
-  width:90%;
-  margin:auto;
-  max-width: 1200px;
-  background-color: #fff;
+  font-family: sans-serif;
+  color: white;
 }
-header
+
+.carousel-inner > .item > a >img
 {
-  background-color: #a3a1a1;
-	padding: 40px 25px;
+  margin: auto;
+  width: 90%;
 }
-.cols
+
+.carousel-caption > p
 {
-  padding: 50px 10px 5px 10px;
-  line-height: 1.5
-}
-img
-{
-  width: 100%;
-  height: auto;
-  margin: 0 0 10px 0;
-  background-color: lightgray;
-  box-sizing: border-box;
-}
-.col1, .col2, .col3
-{
-  float:none;
-  width:90%;
-  margin-right:5%;
-}
-.col3
-{
-  margin-right: 0%;
-}
-.clearfix:after
-{
-  content: "";display: table; clear: both;
+  color: white;
+  font-family: sans-serif;
 }
