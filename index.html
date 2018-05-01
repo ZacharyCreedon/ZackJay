@@ -14,71 +14,87 @@
     <!-- Navigation bar at top of screen -->
     <div class="container">
       <div class="jumbotron">
-        <nav class="navbar navbar-default">
+        <nav class="navbar navbar-inverse navbar-fixed-top">
           <div class="container-fluid">
-            <!--  <a class="navbar-brand" href="index.html">Visit San Francisco</a> -->
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="index.html">San Francisco</a></li>
-              <li><a href="#">Purchase</a></li>
+            <div class="navbar-header">
+              <a class="navbar-brand" href="#"> bootstrap</a>
+            </div>
+            <ul class="nav-navbar-nav">
+              <li class="active"> <a href="index.html">San Francisco</a></li>
+              <li> <a href="purchase.html">Purchase </a></li>
             </ul>
           </div>
         </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="page-header">
+        <h1> Visit San Francisco </h1>
+      </div>
+    </div>
+
+    <div class="container">
 
         <div id="myCarousel" class="carousel slide" data-ride="carousel" >
-        <!-- indicators -->
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
+          <!-- indicators -->
+          <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+          </ol>
 
-        <!-- data wrapper for slides -->
-        <div class ="carousel-inner">
-          <div class="item active">
-            <img src="sfatnight.jpg" alt="SF at Night" width="900" height="500">
-            <div class="carousel-caption">
-              <h3> San Francisco at Night </h3>
-              <p>  Looks Peaceful</p>
+          <!-- data wrapper for slides -->
+          <div class ="carousel-inner">
+            <div class="item active">
+              <img src="sfatnight.jpg" alt="SF at Night">
+
+              <div class="carousel-caption">
+                <h3> San Francisco at Night </h3>
+                <p>  Looks Peaceful</p>
+              </div> -->
             </div>
-          </div>
-          <div class="item">
-            <img src="sflombard.jpg" alt="Lombard Street" width="900" height="500">
-            <div class="carousel-caption" >
+
+            <div class="item">
+              <img src="sflombard.jpg" alt="Lombard Street">
+
+              <div class="carousel-caption">
                 <h3> Lombard Street </h3>
-                <p> Beautiful when visited real early in the Morning </p>
+                <p> Beautiful early in the Morning </p>
               </div>
-          </div>
-          <div class="item">
-            <img src="sfalcatraz.jpg" alt="Needles in the street" width="900" height="500">
-            <div class="carousel-caption">
-              <h3> View of San Francisco with Alcatraz  </h3>
-              <p> Always Beautiful except when the fog obscures the view </p>
             </div>
-          </div>
-          <div class="item">
-            <img src="sfneedles.jpg" alt="Needles in Street" width="900" height="500">
-            <div class="carousel-caption">
-              <h3> View From Street Level </h3>
-              <p> BE CAREFUL  WHERE YOU WALK!!!! </p>
-            </div>
-          </div>
 
-        </div> <!-- end carousel inner -->
+            <div class="item">
+              <img src="sfalcatraz.jpg" alt="Needles">
+              <div class="carousel-caption">
+                <h3> View of San Francisco with Alcatraz  </h3>
+                <p> Always Beautiful except when the fog obscures the view </p>
+              </div>
+            </div>
+
+            <div class="item">
+              <img src="sfneedles.jpg" alt="Needles in Street">
+              <div class="carousel-caption">
+                <h3> View From Street Level </h3>
+                <p> BE CAREFUL  WHERE YOU WALK!!!! </p>
+              </div> -->
+            </div>
+          </div> <!-- end carousel inner -->
 
         <!-- left and right controls -->
-        <a class="left carousel-control" href="myCarousel" data-slide="prev">
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
           <span class="glyphicon glyphicon-chevron-left"></span>
           <span class="sr-only">Prevoius</span>
         </a>
 
-        <a class="right carousel-control" href="myCarousel" data-slide="next">
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
           <span class="glyphicon glyphicon-chevron-right"></span>
           <span class="sr-only">Next</span>
         </a>
       </div>  <!--  end left and right controls -->
     </div>
-  </div>
+
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
   </body>
