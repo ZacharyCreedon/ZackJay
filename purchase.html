@@ -2,98 +2,84 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Forms</title>
-    <link rel="stylesheet" href="purchasestyles.css"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+    <link rel="stylesheet" href="styles.css"/>
+    <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!--
-    Name:       Zachary Creedon
-    Date:       04/26/2018
-    Assignment: Git Traveling
-    -->
+    <style> body {background-image:url(airplane.png);
+      background-size: cover;
+      background-attachment: fixed;}
+      </style>
   </head>
-  <body>
-    <div class="container">
-		<h2>Advising Appointment</h2>
+  <body class="purchase">
+    <div class="container" style="background-color:white">
       <form method="get" action="thankyou.html">
         <fieldset>
-          <legend>
-            Contact Information
-          </legend>
-          <label for="fName">
-            First Name:
-            <input id="fName" type="text" placeholder="First Name" name="fName" required/>
-          </label>
-          <label for="lName">
-            Last Name:
-            <input id="lName" type="text" placeholder="Last Name" name="lName"/>
-          </label>
-          <label for="Email">
-            Email:
-            <input id="Email" type="email" placeholder="Email" name ="Email" required/>
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>
-            Reservation Request
-          </legend>
-          <select name="advisor">
-            <option value="markley">Kristen Markley</option>
-            <option value="ford">Tiffany Ford</option>
-            <option value="riley">Renee Riley</option>
-          </select>
-          <select name="month">
-            <option>January</option>
-            <option>February</option>
-            <option>March</option>
-            <option>April</option>
-            <option>May</option>
-            <option>June</option>
-            <option>July</option>
-            <option>August</option>
-            <option>September</option>
-            <option>October</option>
-            <option>November</option>
-            <option>December</option>
-          </select>
-          <input type="number" name="day" min="1" max="31">
-          <section>
-            <label class="time">
-              <input type="radio" name="ampm" value="A.M." checked> A.M.
-            </label>
-            <label class="time">
-              <input type="radio" name="ampm" value="P.M."> P.M.
-            </label>
-          </section>
-        </fieldset>
-        <fieldset>
-          <legend>
-            Classes You Want To Take Next Semester:
-          </legend>
-          <label class="time">
-            <input type="radio" name="java" value="Java"/>Java
-          </label>
-          <label class="time">
-            <input type="radio" name="csharp" value="C#"/>C#
-          </label>
-          <label class="time">
-            <input type="radio" name="webdev" value="Web Dev"/>Web Dev
-          </label>
-          <label class="time">
-            <input type="radio" name="sql" value="Database"/>Database
-          </label>
-          <label class="time">
-            <input type="radio" name="sad" value="System Analysis & Design"/>System Analysis & Design
-          </label>
-        </fieldset>
-        <fieldset>
-          <legend>
-            Additional Info
-          </legend>
-          <textarea name="extra info" rows="5" cols="50" placeholder="Any additional info"></textarea>
-        </fieldset>
-        <input class="submit" type="submit" value="Submit">
+          <legend>Contact Info</legend>
+          <div class="form-group">
+            <label for="fName">First Name:</label>
+            <input type="text" name="fName" class="form-control" id="fName" placeholder="First Name" required>
+          </div>
+          <div class="form-group">
+            <label for="lName">Last Name:</label>
+            <input type="text" name="lName" class="form-control" id="lName" placeholder="Last Name" required>
+          </div>
+          <div class="form-group">
+            <label for="Email">Email address:</label>
+            <input type="email" name="email" class="form-control" id="Email" placeholder="Email" required>
+          </div>
+          </fieldset>
+          <fieldset>
+            <legend>Planned Date</legend>
+            <div class="form-group">
+              <label>
+                Month:
+                <select name="month">
+                  <option>January</option>
+                  <option>February</option>
+                  <option>March</option>
+                  <option>April</option>
+                  <option>May</option>
+                  <option>June</option>
+                  <option>July</option>
+                  <option>August</option>
+                  <option>September</option>
+                  <option>October</option>
+                  <option>November</option>
+                  <option>December</option>
+                </select>
+              </label>
+              <label>
+                Day:
+                <input type="number" name="day" min="1" max="31">
+              </label>
+            </div>
+            <div class="radio-inline">
+              <label>
+                <input type="radio" name="amPm" id="AM" value="AM" checked>
+                A.M.
+              </label>
+            </div>
+            <div class="radio-inline">
+              <label>
+                <input type="radio" name="amPm" id="PM" value="PM">
+                P.M.
+              </label>
+            </div>
+            <div class="form-group">
+              <label>
+                How many people are going?
+                <input type="number" name="people" min="1" max="8">
+              </label>
+            </div>
+          </fieldset>
+          <button type="submit" class="btn btn-default" style="margin-bottom:5px;">Submit</button>
+
       </form>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     </div>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
   </body>
 </html>

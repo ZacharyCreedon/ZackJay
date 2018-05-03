@@ -97,3 +97,18 @@ h3
   font-family: sans-serif;
 }
   /* all above this line belongs to Index.html */
+  /* Below this line belongs to purchase.html */
+
+.purchase {
+  background-image:url(airplane.png);
+  background-size: cover;
+  background-attachment: fixed;
+}
+.container {
+  margin:auto;
+  width:80%;
+  background-color: #eeeeee;
+  padding:25px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
